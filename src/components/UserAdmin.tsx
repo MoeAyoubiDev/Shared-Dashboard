@@ -67,7 +67,7 @@ export default function UserAdmin({
   }
 
   async function remove(u: AppUser) {
-    if (!confirm(`Delete user ${u.email}?`)) return;
+    if (!confirm(`Delete user ${u.name} (@${u.username})?`)) return;
     const res = await fetch(`/api/users/${u.id}`, { method: 'DELETE' });
     if (res.ok) load();
     else {
