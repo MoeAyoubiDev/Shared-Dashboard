@@ -141,6 +141,7 @@ export default function UserAdmin({
         </div>
 
         <div className="panel">
+          <div className="table-wrap">
           <table>
             <thead>
               <tr>
@@ -191,6 +192,7 @@ export default function UserAdmin({
               )}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
     </>

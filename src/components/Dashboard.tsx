@@ -209,6 +209,7 @@ export default function Dashboard({ user }: { user: SessionPayload }) {
         </div>
 
         <div className="panel">
+          <div className="table-wrap">
           <table>
             <thead>
               {isTrainer ? (
@@ -417,6 +418,7 @@ export default function Dashboard({ user }: { user: SessionPayload }) {
               )}
             </tbody>
           </table>
+          </div>
         </div>
       </div>
 
